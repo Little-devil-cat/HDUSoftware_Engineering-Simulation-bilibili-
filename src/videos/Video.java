@@ -27,6 +27,11 @@ public class Video extends VideoFactory implements VideoI{//视频类
         System.out.println("视频名："+name);
         System.out.println("作者是："+author);
         System.out.println("视频："+data);
+        if(BVID.equals("00001")){
+            interaction();
+            System.out.println("评论区更新："+data.comment);
+        }
+        System.out.println("\n");
     }
 
     @Override
@@ -36,6 +41,6 @@ public class Video extends VideoFactory implements VideoI{//视频类
 
     @Override
     public void interaction() {
-        System.out.println("点赞弹幕评论");
+        data.comment+="，用户评论";
     }
 }

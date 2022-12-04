@@ -1,5 +1,7 @@
 package videos;
 
+import java.util.Scanner;
+
 public class user {//用户数据
     String ID;
     String name;
